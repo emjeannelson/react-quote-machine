@@ -15,9 +15,12 @@ export default class Controls extends React.Component {
     this.props.onTweet(quote, author);
   }
   render() {
+    const TWEET_URL = 'https://twitter.com/intent/tweet';
+    let {quote, author} = this.props;
+    let encodedTweetText = encodeURIComponent(quote + ' - ' + author);
     return (
       <div className="clearfix">
-        <button className="button float-left" onClick={this.onTweetClicked}>Share on Twitter</button>
+        <a className="twitter-share-button button float-left" href={`${TWEET_URL}?text=${encodedTweetText}`}>Tweet</a>
         <button className="button float-right" onClick={this.onGetQuoteClicked}>Get a New Quote</button>
       </div>
     );
