@@ -20,8 +20,8 @@ export default class Controls extends React.Component {
     let encodedTweetText = encodeURIComponent(quote + ' - ' + author);
     return (
       <div className="clearfix">
-        <a className="twitter-share-button button float-left" href={`${TWEET_URL}?text=${encodedTweetText}`}>Tweet</a>
-        <button className="button float-right" onClick={this.onGetQuoteClicked}>Get a New Quote</button>
+        <a className="twitter-share-button button float-left blue" href={`${TWEET_URL}?text=${encodedTweetText}`}>Tweet</a>
+        <button className="button float-right blue" onClick={this.onGetQuoteClicked}>Get a New Quote</button>
       </div>
     );
   }

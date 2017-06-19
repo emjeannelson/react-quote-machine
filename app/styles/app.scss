@@ -5,6 +5,12 @@
 @import "foundation";
 @include foundation-everything;
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans');
+
 // Components
 @import "components/body";
 @import "components/main";
+@import "components/quote";
+@import "components/loader";
+@import "components/controls";

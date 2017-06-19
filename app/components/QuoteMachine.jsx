@@ -17,29 +17,26 @@ export default class Main extends React.Component {
   handleGetQuote() {
     this.setState({
       isLoading: true,
-      errorMessage: undefined,
       quote: undefined,
       author: undefined
     });
-    
+
     let that = this;
 
     getQuote().then(function (response) {
       that.setState({
         quote: response.quote,
         author: response.author,
+        isLoading: false
       });
     }, function (e) {
-      console.log(e);
     });
   }
   render() {
     return (
-      <div className="row">
-          <div className="columns small-12 small-centered medium-6 quote-card">
-            <Quote quote={this.state.quote} author={this.state.author}/>
+      <div className="quote-bubble">
+            <Quote isLoading={this.state.isLoading} quote={this.state.quote} author={this.state.author}/>
             <Controls onGetQuote={this.handleGetQuote} quote={this.state.quote} author={this.state.author} />
-          </div>
       </div>
     );
   }

@@ -1,4 +1,38 @@
-.quote-card {
-  background-color: white;
-  margin-top: 10%;
+.quote-bubble {
+  position: relative;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  padding: 2rem 3rem;
+  color: #000;
+  background: #FFF;
+  border-radius: 25px 50px;
+}
+
+/* creates the larger triangle */
+.quote-bubble:before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:80px;
+  border-width:0 0 30px 50px;
+  border-style:solid;
+  border-color:transparent #f3961c;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the smaller triangle */
+.quote-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 110px;
+  border-width: 0 0 30px 20px;
+  border-style: solid;
+  border-color: transparent #fff;
+  /* reduce the damage in FF3.0 */
+  display: block;
+  width: 0;
 }
