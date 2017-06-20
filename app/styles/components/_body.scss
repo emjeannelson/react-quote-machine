@@ -1,6 +1,7 @@
 #app {
-  background-color: #FAC510;
+  background-color: $light-orange;
   background: linear-gradient($dark-orange, $light-orange);
   width: 100%;
   height: 100%;
+  padding-bottom: 40%;
 }

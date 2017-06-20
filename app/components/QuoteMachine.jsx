@@ -4,7 +4,7 @@ import Quote from 'Quote';
 import Controls from 'Controls';
 import getQuote from 'randomQuote';
 
-export default class Main extends React.Component {
+export default class QuoteMachine extends React.Component {
   constructor() {
     super();
     this.handleGetQuote = this.handleGetQuote.bind(this);

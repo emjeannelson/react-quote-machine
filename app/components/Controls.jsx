@@ -5,7 +5,6 @@ export default class Controls extends React.Component {
   constructor() {
     super();
     this.onGetQuoteClicked = this.onGetQuoteClicked.bind(this);
-    this.onTweetClicked = this.onTweetClicked.bind(this);
   }
   onGetQuoteClicked() {
     this.props.onGetQuote();
