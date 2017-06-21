@@ -1,13 +1,13 @@
 {
-  "name": "boilerplate",
+  "name": "Random Quote Machine App",
   "version": "1.0.0",
-  "description": "Simple react app",
+  "description": "Simple React app that gets a random quote",
   "main": "index.js",
   "scripts": {
     "test": "karma start",
     "start": "node server.js"
   },
-  "author": "Andrew Mead",
+  "author": "Emily Nelson",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.9.1",
