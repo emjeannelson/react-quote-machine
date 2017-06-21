@@ -1,5 +1,5 @@
 {
-  "name": "Random Quote Machine App",
+  "name": "random-quote-machine",
   "version": "1.0.0",
   "description": "Simple React app that gets a random quote",
   "main": "index.js",
